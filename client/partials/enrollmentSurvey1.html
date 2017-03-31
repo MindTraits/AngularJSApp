@@ -1,0 +1,27 @@
+
+  <md-grid-tile-header>
+  	
+    <center><h3>Before You Begin</h3></center>
+    <!-- <md-progress-linear md-mode="determinate" value="50"></md-progress-linear> -->
+  </md-grid-tile-header>
+<md-content layout-padding>
+<center><div><strong>Please answer...</strong>
+
+Lorem ipsum dolor sit
+
+amet, consectetur
+
+adipiscing elit, sed do
+
+eiusmod?</div></center>
+
+
+<md-radio-group ng-repeat="data in dataList">
+<md-radio-button class="md-primary" value="{{data.value}}" aria-label="{{data.title}}{{$index+1}}" >
+  {{data.title}} {{$index+1}}
+</md-radio-button>
+</md-radio-group>
+<!-- <input type="radio" name="gender" value="male" checked>Male -->
+<div><span class="md-primary" ng-click="goBack()"><<==</span> &nbsp;<span class="md-primary" ng-click="goNext()">==>></span></div>
+
+</md-content>

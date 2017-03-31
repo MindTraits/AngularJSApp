@@ -1,0 +1,23 @@
+<!-- <md-grid-tile>
+  
+</md-grid-tile> -->
+<md-grid-tile-header>
+<span class="md-primary" ng-click="goBack()"><<==</span>
+    <center><h3>{{planData.title}}</h3></center>
+  </md-grid-tile-header>
+
+<div >
+    <center><h3>{{planData.description}}</h3></center>
+</div>
+<div>
+	<center>{{planData.price}}<br/>Per Paycheck</center>
+</div>
+<md-content layout-padding>
+    <md-list-item class="md-3-line" ng-repeat="data in medicalList">
+	   <div></div>
+	   <md-divider ></md-divider>
+	 </md-list-item>
+	 <div ng-click="selectPlan()">
+	 	SELECTED PLAN
+	 </div>
+</md-content>

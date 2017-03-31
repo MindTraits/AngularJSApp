@@ -1,0 +1,26 @@
+<!-- <md-grid-tile>
+  
+</md-grid-tile> -->
+<md-grid-tile-header>
+<span class="md-primary" ng-click="goBack()"><<==</span>
+    <center><h3>Medical</h3></center>
+  </md-grid-tile-header>
+
+<div >
+	3 Medical Plans
+</div>
+<div>
+	Need Help Deciding?
+   The best plan for you, isn’t
+    always the cheapest.
+</div>
+<md-content layout-padding>
+    <md-list-item class="md-3-line" ng-repeat="data in medicalList" ng-click="selectPlan(data)">
+	   <md-icon md-svg-icon=""></md-icon>
+	   <img class="md-avatar" alt="" />
+	   <div class="md-list-item-text" layout="column">
+	        <p>{{data.title}}:{{data.description}}&nbsp; <strong>{{data.price}}</strong></p>
+	   </div>
+	   <md-divider ></md-divider>
+	 </md-list-item>
+</md-content>

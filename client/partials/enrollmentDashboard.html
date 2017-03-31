@@ -1,0 +1,35 @@
+
+  <md-grid-tile-header>
+  	<span class="md-primary" ng-click="goBack()"><<==</span>
+    <center><h3>Enrollment 2017</h3></center>
+  </md-grid-tile-header>
+
+<md-content layout-padding>
+	
+		<div>
+			<md-icon md-svg-icon=""></md-icon>
+			   <img class="md-avatar" alt="" />
+			   <div class="md-list-item-text" layout="column">
+			        <p>Jane Taylor, John Taylor, +2 Others</p>
+			   </div>
+			   <md-divider ></md-divider>
+		</div>
+		<center><div>
+			4 Need Review
+		</div></center>
+		<md-divider ></md-divider>
+	    <md-list-item class="md-3-line" ng-repeat="data in medicalList" ng-click="goToBenefitSelection()">
+		   <md-icon md-svg-icon=""></md-icon>
+		   <img class="md-avatar" alt="" />
+		   <div class="md-list-item-text" layout="column">
+		        <h4>{{data.title}}</h4>
+		        <p>{{data.description}}</p>
+		   </div>
+		   <md-divider ></md-divider>
+		 </md-list-item>
+		<div> <md-icon md-svg-icon=""></md-icon>Cost Per Paycheck &nbsp;&nbsp;&nbsp;$300</div>
+		<div ng-click="selectPlan" ng-disable="planSelected">Pay For Plan</div>
+   
+
+	 <!-- <div> &nbsp;<span class="md-primary" ng-click="goNext()">==>></span></div> -->
+</md-content>

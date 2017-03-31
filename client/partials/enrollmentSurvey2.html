@@ -1,0 +1,23 @@
+
+  <md-grid-tile-header>
+  	
+    <center><h3>Before You Begin</h3></center>
+  </md-grid-tile-header>
+
+<md-content layout-padding>
+	<center><div><strong>Please answer...</strong>
+		Here is who we have on
+	file that will be covered.</div></center>
+	<div ng-click="goToAddPerson()"> <md-icon md-svg-icon=""></md-icon>ADD PERSON</div>
+    <md-list-item class="md-3-line" ng-repeat="data in personList">
+	   <md-icon md-svg-icon=""></md-icon>
+	   <img class="md-avatar" alt="" />
+	   <div class="md-list-item-text" layout="column">
+	        <h4>{{data.name}}</h4>
+	        <p>{{data.description}}</p>
+	   </div>
+	   <md-divider ></md-divider>
+	 </md-list-item>
+
+	 <div><span class="md-primary" ng-click="goBack()"><<==</span> &nbsp;<span class="md-primary" ng-click="goNext()">==>></span></div>
+</md-content>
