@@ -19,5 +19,5 @@ config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/enrollmentDashboard', {templateUrl: 'partials/enrollmentDashboard.html', controller: 'EnrollmentDashboardCtrl'});
     $routeProvider.when('/benefitSelection', {templateUrl: 'partials/benefitSelection.html', controller: 'BenefitSelectionCtrl'});
     $routeProvider.when('/planselection', {templateUrl: 'partials/planSelection.html', controller: 'PlanSelectionCtrl'});
-    $routeProvider.otherwise({redirectTo: '/employees'});
+    $routeProvider.otherwise({redirectTo: '/dashboard'});
 }]);
