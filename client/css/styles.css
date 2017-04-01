@@ -12,7 +12,7 @@
 }
 
 .header-text {
-	color: #000000;"
+	color: #8A8A8A;"
 }
 
 .icon-color {
@@ -24,10 +24,19 @@
 	border : 1px solid #e2e2e2;
 }
 
+.list-border-left {
+	border-left: 10px solid #F39019;
+}
+
 .content-background {
 	background-color: #e4e4e4;
+	min-height: 100% !important;
 }
 
 .card-backgroung {
 	background-color: #545E10;
+}
+
+.text-color {
+	color: #8A8A8A !important;
 }
