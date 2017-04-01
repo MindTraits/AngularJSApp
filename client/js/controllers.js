@@ -50,19 +50,19 @@ angular.module('myApp.controllers', [])
         $scope.benefitList = [
             {title:"Current Benefits",
              description:"Review your current 2016 benefits",
-             glyphicons:"glyphicons glyphicons-hospital"
+             glyphicons:"add_to_queue"
             },
             {title:"Report Life Event/Change",
              description:"Update coverage or add someone new.",
-             glyphicons:"glyphicon glyphicon-user"
+             glyphicons:"person"
             },
             {title:"Forms & Documents",
              description:"Here find waivers, forms or plan documents.",
-             glyphicons:"glyphicon glyphicon-list-alt"
+             glyphicons:"chrome_reader_mode"
             },
             {title:"401K",
              description:"Change of update your 401K contributions.",
-             glyphicons:"glyphicon glyphicon-fire"
+             glyphicons:"bug_report"
             }
         ];
 
