@@ -1,51 +1,47 @@
-<div class="header">
-  <md-toolbar style="background-color: #ffffff;">
-      <div class="md-toolbar-tools" ng-hide="showSearchBarDiv">
-        <md-button class="md-icon-button" show-sm ng-click="goBack()">
-          <md-tooltip>Menu</md-tooltip>
-          <md-icon ng-bind="'menu'" style="color: #1e92af;"></md-icon>
-        </md-button>
-        <span flex></span>	
-        <h1><span style="color: #000000;">Benefits</span></h1>
-        <span flex></span>
-      </div>
-     </md-toolbar>
+<md-toolbar style="background-color: #ffffff;">
+  	<div class="md-toolbar-tools" ng-hide="showSearchBarDiv">
+	    <md-button class="md-icon-button" show-sm ng-click="goBack()">
+	      <md-tooltip>Menu</md-tooltip>
+	      <md-icon ng-bind="'menu'" class="icon-color"></md-icon>
+	    </md-button>
+    	<span flex="25"></span>
+    	<h1><span class="header-text">Benefits</span></h1>
+  	</div>
+</md-toolbar>
 
-     <md-content style="background-color: #e4e4e4;">
-	    <md-card style="background-color: #545E10" ng-click="goToEnrollmentSurvey1()">
-		    <md-card-content>
-		    <!-- <img src="pics/amy_jones.jpg" width=100% height="150px" ng-click="goToEnrollmentSurvey1()"> -->
-			    <md-list class="md-dense" flex style="background-color: #9C9F7D">
-				    <md-list-item class="md-3-line md-long-text" >
-					    <div class="md-list-item-text" layout="column">
-				            <center>
-				            	<p>
-				            		<md-icon ng-bind="'date_range'"  style="font-size: 50px"></md-icon>
-				            	</p>
-					            <div style="margin-top: 30px">
-					            	<h3><b>Open Enrollment 2017</b></h3>
-						            <p>24 days left</p>
-						        </div>
-				            </center>
-				        </div>
-					   	<md-icon ng-bind="'chevron_right'"></md-icon>
-					</md-list-item>
-				</md-list>
-		    </md-card-content>
-		</md-card>
+<md-content class="content-background">
+    <md-card class="card-backgroung" ng-click="goToEnrollmentSurvey1()">
+	    <md-card-content>
+		    <md-list class="md-dense" flex style="background-color: #9C9F7D">
+			    <md-list-item class="md-3-line md-long-text" >
+				    <div class="md-list-item-text" layout="column">
+			            <center>
+			            	<p>
+			            		<md-icon ng-bind="'date_range'"  style="font-size: 50px"></md-icon>
+			            	</p>
+				            <div style="margin-top: 30px">
+				            	<h3><b>Open Enrollment 2017</b></h3>
+					            <p>24 days left</p>
+					        </div>
+			            </center>
+			        </div>
+				   	<md-icon ng-bind="'chevron_right'"></md-icon>
+				</md-list-item>
+			</md-list>
+	    </md-card-content>
+	</md-card>
      
-     	<md-list class="md-dense" flex style="background-color: #ffffff;">
-		    <md-list-item class="md-3-line md-long-text" ng-repeat="data in benefitList">
-			   	<md-icon ng-bind="data.glyphicons" style="color: #1e92af;"></md-icon>
-			    <div class="md-list-item-text" layout="column">
-		            <h3><b>{{data.title}}</b></h3>
-		            <p>{{data.description}}</p>
-		        </div>
-			   	<md-icon ng-bind="'chevron_right'"></md-icon>
-			   	<md-divider ></md-divider>
-			</md-list-item>
-		</md-list>
-	</md-content>
-</div>
+ 	<md-list class="md-dense" flex style="background-color: #ffffff;">
+	    <md-list-item class="md-3-line md-long-text" ng-repeat="data in benefitList">
+		   	<md-icon ng-bind="data.glyphicons" style="color: #1e92af;"></md-icon>
+		    <div class="md-list-item-text" layout="column">
+	            <h3><b>{{data.title}}</b></h3>
+	            <p>{{data.description}}</p>
+	        </div>
+		   	<md-icon ng-bind="'chevron_right'"></md-icon>
+		   	<md-divider ></md-divider>
+		</md-list-item>
+	</md-list>
+</md-content>
 
 

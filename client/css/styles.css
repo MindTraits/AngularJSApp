@@ -4,13 +4,30 @@
 }
 
 .radio-button-text {
-	color : #1e92af !important;
+	color : #1e92af;
 }
 
 .header-bg {
-	background-color: #ffffff !important;"
+	background-color: #ffffff;"
 }
 
 .header-text {
-	color: #000000 !important;"
+	color: #000000;"
+}
+
+.icon-color {
+	color: #1e92af;
+}
+
+.list-border {
+	background-color: #ffffff;
+	border : 1px solid #e2e2e2;
+}
+
+.content-background {
+	background-color: #e4e4e4;
+}
+
+.card-backgroung {
+	background-color: #545E10;
 }
