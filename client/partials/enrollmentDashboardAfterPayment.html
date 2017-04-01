@@ -1,36 +1,58 @@
 <md-toolbar class="header-bg">
     <div class="md-toolbar-tools">
         <md-button class="md-icon-button"  show-sm  ng-click="goToPaymentEnrollement()">
-          	<md-tooltip>Next</md-tooltip>
           	<md-icon ng-bind="'chevron_left'" class="icon-color"></md-icon>
         </md-button>
         <h1 flex="90" class="header-text">Enrollment 2017</h1>
     </div>
 </md-toolbar>
-<md-divider ></md-divider>
 
 <md-content class="content-background">
-		
-		<div>
-			You Did It!
-			   <md-divider ></md-divider>
-		</div>
-		<center><div>
-			Confirmation Number:
+	<div layout>
+		<span flex="40"></span>
+		<div flex="20">
+	    	<p>
+	    		<md-icon ng-bind="'check_box'" style="color:green;font-size: 80px"></md-icon>
+	    	</p>
+	    </div>
+        <span flex="40"></span>
+	</div>
 
-			1230981230981
-			STATEMENT
-		</div></center>
-		<md-divider ></md-divider>
-	    
-		   <div>
-		        Rate your experience
-		   </div>
+	<center style="color:green;margin-top: 50px">
+    	<h3>You Did It!</h3>
+    </center>
+			            
+	
+	<center class="">
+		<div class="header-bg md-padding">
+			<p>Confirmation Number:</p>
+			<p><b>1230981230981</b></p>
+			<span>STATEMENT</span>
+		</div>
+
+		<div style="margin-top: 50px">
+	        <b>Rate your experience</b>
+	   </div>
+	</center>
+	
+	<div class="md-padding" style="margin-left:110px;margin-top:20px">
+		<md-icon ng-bind="'star_border'"></md-icon>
+	   	<md-icon ng-bind="'star_border'"></md-icon>
+	   	<md-icon ng-bind="'star_border'"></md-icon>
+	   	<md-icon ng-bind="'star_border'"></md-icon>
+	   	<md-icon ng-bind="'star_border'"></md-icon>
+	</div>
+
+	<div class="md-padding">
+	</div>
+	<div class="md-padding">
+	</div>
 </md-content>
+
 <md-toolbar class="header-bg">
-    <div>
+    <div layout>
       <span flex="30"></span>
-      <md-button flex="30" class="md-raised md-primary-btn" type="button">Blue</md-button>
+      <md-button flex="40" class="md-raised md-primary-btn" type="button">Done</md-button>
       <span flex="30"></span>
     </div>
 </md-toolbar>

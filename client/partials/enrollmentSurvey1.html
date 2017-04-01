@@ -2,13 +2,12 @@
     <div class="md-toolbar-tools">
         <h1 flex="90" class="header-text">Before You Begin</h1>
         <md-button class="md-icon-button"  show-sm  ng-click="goBack()">
-          	<md-tooltip>Next</md-tooltip>
           	<md-icon ng-bind="'clear'" style="color: #000000;"></md-icon>
         </md-button>
     </div>
 </md-toolbar>
 
-<md-content layout-wrap layout-fill style="background-color: #e4e4e4;" ng-click="goNext()">
+<md-content layout-fill style="background-color: #e4e4e4;" ng-click="goNext()">
 	<div layout flex>
 		<span flex="40" class="border-after-header-40">
 		</span>
@@ -30,7 +29,7 @@
 		</h3>
 	</center>
 
-	<md-radio-group class="md-padding" ng-repeat="data in dataList">
+	<md-radio-group ng-repeat="data in dataList">
 		<md-radio-button class="md-primary" value="{{data.value}}" aria-label="{{data.title}}{{$index+1}}" >
 	  	<div class="radio-button-text">{{data.title}} {{$index+1}}</div>
 		</md-radio-button>
