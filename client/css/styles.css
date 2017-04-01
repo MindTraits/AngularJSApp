@@ -12,7 +12,7 @@
 }
 
 .header-text {
-	color: #8A8A8A;"
+	color: black;"
 }
 
 .icon-color {
@@ -39,6 +39,18 @@
 
 .text-color {
 	color: #8A8A8A !important;
+}
+
 .medical-icon-color-unpaid{
     color: #F27B30;
+}
+
+.border-after-header-40{
+	min-height:15px;
+	background: #1e92af;
+}
+
+.border-after-header-60{
+	min-height:15px;
+	background: grey;
 }
