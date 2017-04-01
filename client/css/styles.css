@@ -21,7 +21,7 @@
 }
 
 .icon-color {
-	color: #1e92af;
+	color: #1e92af !important;
 }
 
 .list-border {
@@ -31,6 +31,12 @@
 
 .list-border-left {
 	border-left: 10px solid #F39019;
+}
+
+.list-border-benefit {
+	background-color: #ffffff;
+	border : 2px solid #1e92af;
+	border-left: 10px solid #1e92af;
 }
 
 .content-background {
@@ -45,7 +51,6 @@
 .text-color {
 	color: #8A8A8A !important;
 }
-<<<<<<< HEAD
 
 .medical-icon-color-unpaid{
     color: #F27B30;
@@ -66,4 +71,10 @@
 }
 .medical-icon-color-paid{
     color: #2EB150;
+}
+
+.empty-box{
+	min-height:15px;
+	background: #8A8A8A !important;
+	border-radius: 10px;
 }

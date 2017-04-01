@@ -1,25 +1,3 @@
-
-<!-- <md-grid-tile-header>
-<span class="md-primary" ng-click="goBack()"><<==</span>
-    <center><h3>{{planData.title}}</h3></center>
-  </md-grid-tile-header>
-
-<div >
-    <center><h3>{{planData.description}}</h3></center>
-</div>
-<div>
-	<center>{{planData.price}}<br/>Per Paycheck</center>
-</div>
-<md-content layout-padding>
-    <md-list-item class="md-3-line" ng-repeat="data in medicalList">
-	   <div></div>
-	   <md-divider ></md-divider>
-	 </md-list-item>
-	 <div ng-click="selectPlan()">
-	 	SELECTED PLAN
-	 </div>
-</md-content>
- -->
 <md-toolbar class="header-bg">
     <div class="md-toolbar-tools">
         <md-button class="md-icon-button"  show-sm  ng-click="goBack()">
@@ -31,37 +9,38 @@
 </md-toolbar>
 <md-divider ></md-divider>
 
-<md-content class="content-background">
-		
+<md-content class="content-background md-padding">
+	<div class="header-bg">
 		<div class="md-primary-btn md-padding">
-			<br/>
-			<div>
+			<h1 class="md-title">
 				{{planData.description}}
-			</div>
-			<br/>
+			</h1>
 		</div>
-		<div class="header-bg" ng-click="goNext()">
-			<br/>
-			<div>
-				<center><b>{{planData.price}}</b></center><br/>
-				<center>Per Paycheck</center>
-			</div>
-			<br/>
+		<div  ng-click="goNext()">
+			<center>
+				<h1 class="md-headline">
+					{{planData.price}}
+				</h1>
+				<p>
+					Per Paycheck
+				</p>
+			</center>
 		</div>
-		
 		<md-divider ></md-divider>
 		<md-list class="md-dense" flex>
 		    <md-list-item class="md-3-line md-long-text" ng-repeat="data in medicalList" ng-click="goNext()">
-			   
-			   	<md-divider ></md-divider>
+			   	<div layout flex>
+					<span flex class="empty-box">
+					</span>
+				</div>
 			</md-list-item>
 		</md-list>
-	    
+	</div>
 </md-content>
 <md-toolbar class="header-bg">
-    <div>
+    <div class="md-padding" layout ng-click="goNext()">
       <span flex="30"></span>
-      <md-button flex="30" class="md-raised md-primary-btn" ng-click="goNext()" type="button"><center>Select Plan</center></md-button>
+      <center class="text-color"><md-icon ng-bind="'album'" class="medical-icon-color-paid"></md-icon>Select Plan</center>
       <span flex="30"></span>
     </div>
 </md-toolbar>

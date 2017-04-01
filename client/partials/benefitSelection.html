@@ -10,7 +10,6 @@
 <md-divider ></md-divider>
 
 <md-content class="content-background">
-		
 		<div class="md-padding">
 			<br/>
 			<div>
@@ -18,20 +17,22 @@
 			</div>
 			<br/>
 		</div>
-		<center>
-			<div class="header-bg">
-				<br/>
-				Need Help Deciding?
-			   	The best plan for you, isn’t
-			    always the cheapest.
-			    <md-icon ng-bind="'chevron_right'"></md-icon>
-				<br/>
-			</div>
-		</center>
+		<md-list class="md-dense" flex style="background-color: #ffffff;">
+		    <md-list-item class="list-border-benefit md-3-line md-long-text" ng-click="selectPlan(data)">
+			   	<md-icon ng-bind="'thumb_up'" class="icon-color"></md-icon>
+			    <div class="md-list-item-text" layout="column">
+		            <p class="icon-color">Need Help Deciding?
+				   	The best plan for you, isn’t
+				    always the cheapest.</p>
+		        </div>
+		        <md-icon ng-bind="'chevron_right'"></md-icon>
+			   	<md-divider ></md-divider>
+			</md-list-item>
+		</md-list>
 		<md-divider ></md-divider>
 	    <md-list class="md-dense" flex style="background-color: #ffffff;">
 		    <md-list-item class="md-3-line md-long-text" ng-repeat="data in medicalList" ng-click="selectPlan(data)">
-			   	<md-icon ng-bind="data.glyphicons" class="medical-icon-color-unpaid"></md-icon>
+			   	<md-icon ng-bind="'album'" class="medical-icon-color-paid"></md-icon>
 			    <div class="md-list-item-text" layout="column">
 		            <p>{{data.title}}:{{data.description}}&nbsp; <strong>{{data.price}}</strong></p>
 		        </div>
@@ -39,11 +40,13 @@
 			   	<md-divider ></md-divider>
 			</md-list-item>
 		</md-list>
+		<br/>
+		<br/>
+		<br/>
 </md-content>
 <md-toolbar class="header-bg">
-    <div>
-      <span flex="30"></span>
-      <md-button flex="30" class="md-raised md-primary-btn" ng-click="goNext()" type="button">Next Vision</md-button>
-      <span flex="30"></span>
-    </div>
+	<div layout class="md-toolbar-tools">
+		<span flex="50"></span>>
+		<span class="icon-color">Next Vision &nbsp;&nbsp; <md-icon ng-bind="'arrow_forward'" class="icon-color"></md-icon></span>
+	</div>
 </md-toolbar>
