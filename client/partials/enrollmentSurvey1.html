@@ -1,27 +1,53 @@
+<md-toolbar class="header-bg">
+    <div class="md-toolbar-tools">
+        <h1 flex="90" class="header-text">Before You Begin</h1>
+        <md-button class="md-icon-button"  show-sm  ng-click="goBack()">
+          	<md-tooltip>Next</md-tooltip>
+          	<md-icon ng-bind="'clear'" style="color: #000000;"></md-icon>
+        </md-button>
+    </div>
+</md-toolbar>
 
-  <md-grid-tile-header>
-  	
-    <center><h3>Before You Begin</h3></center>
-    <!-- <md-progress-linear md-mode="determinate" value="50"></md-progress-linear> -->
-  </md-grid-tile-header>
-<md-content layout-padding>
-<center><div><strong>Please answer...</strong>
+<md-content layout-wrap layout-fill style="background-color: #e4e4e4;" ng-click="goNext()">
+	<center>
+		<h3 class="md-padding">
+			<center class="md-display-1">Please answer...</center>
+			<div class="md-headline">
+				Lorem ipsum dolor sit
 
-Lorem ipsum dolor sit
+				amet, consectetur
 
-amet, consectetur
+				adipiscing elit, sed do
 
-adipiscing elit, sed do
+				eiusmod?
+			</div>
+		</h3>
+	</center>
 
-eiusmod?</div></center>
-
-
-<md-radio-group ng-repeat="data in dataList">
-<md-radio-button class="md-primary" value="{{data.value}}" aria-label="{{data.title}}{{$index+1}}" >
-  {{data.title}} {{$index+1}}
-</md-radio-button>
-</md-radio-group>
-<!-- <input type="radio" name="gender" value="male" checked>Male -->
-<div><span class="md-primary" ng-click="goBack()"><<==</span> &nbsp;<span class="md-primary" ng-click="goNext()">==>></span></div>
-
+	<md-radio-group class="md-padding" ng-repeat="data in dataList">
+		<md-radio-button class="md-primary" value="{{data.value}}" aria-label="{{data.title}}{{$index+1}}" >
+	  	<div class="radio-button-text">{{data.title}} {{$index+1}}</div>
+		</md-radio-button>
+	</md-radio-group>
 </md-content>
+
+
+<md-toolbar style="background-color: #ffffff;">
+    <div class="md-toolbar-tools">
+      <md-button flex="30" class="md-raised md-primary-btn" ng-click="goBack()" type="button">Previous</md-button>
+      <span flex="40"></span>
+      <md-button flex="30" class="md-raised md-primary-btn" ng-click="goNext()" type="button">NEXT</md-button>
+    </div>
+</md-toolbar>
+
+
+
+
+
+
+
+
+
+
+
+  
