@@ -3,6 +3,11 @@
 	color : #ffffff !important;
 }
 
+.md-disable-btn {
+	background-color : #f2f2f2 !important;
+	color : #000000 !important;
+}
+
 .radio-button-text {
 	color : #1e92af;
 }
