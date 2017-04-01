@@ -34,8 +34,8 @@
 		
 		<md-divider ></md-divider>
 		<md-list class="md-dense" flex style="background-color: #ffffff;">
-		    <md-list-item class="md-3-line md-long-text" ng-repeat="data in medicalList" ng-click="goToBenefitSelection()">
-			   	<md-icon ng-bind="data.glyphicons" class="medical-icon-color-unpaid"></md-icon>
+		    <md-list-item class="md-3-line md-long-text" ng-repeat="data in medicalList" ng-click="paymentSucess()">
+			   	<md-icon ng-bind="data.glyphicons" class="medical-icon-color-paid"></md-icon>
 			    <div class="md-list-item-text" layout="column">
 		            <h3><b>{{data.title}}</b></h3>
 		            <p>{{data.description}}</p>
@@ -53,7 +53,7 @@
     </div>
     <div>
       <span flex="30"></span>
-      <md-button flex="30" class="md-raised md-primary-btn" ng-click="goNext()" type="button">Grey color</md-button>
+      <md-button flex="30" class="md-raised md-primary-btn" ng-click="paymentSucess()" type="button">Blue</md-button>
       <span flex="30"></span>
     </div>
 </md-toolbar>

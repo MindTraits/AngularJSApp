@@ -37,6 +37,9 @@ angular.module('myApp.controllers', [])
         $scope.goToBenefitDashboard = function(){
             $location.url('/benefitDashboard');
         };
+        $scope.goToEnrollmentSurvey1 = function(){
+            $location.url('/enrollmentSurvey1');
+        };
         
 
     }]).controller('BenefitDashboardCtrl', ['$scope','$location', function ($scope,$location) {
@@ -127,6 +130,9 @@ angular.module('myApp.controllers', [])
         $scope.goBack = function(){
             $location.url('/enrollmentSurvey2');
         };
+        $scope.goToPaymentEnrollement = function(){
+            $location.url('/enrollmentDashboardPayment');
+        };
         if(localStorage.hasOwnProperty("planselected")){
             $scope.planSelected = false;
         }else{
@@ -147,6 +153,10 @@ angular.module('myApp.controllers', [])
         };*/
         $scope.goToBenefitSelection = function(){
              $location.url('/benefitSelection');
+        };
+
+        $scope.paymentSucess = function(){
+            $location.url('/enrollmentDashboardAfterPayment');
         };
         
         $scope.medicalList = [
@@ -201,9 +211,10 @@ angular.module('myApp.controllers', [])
         if(localStorage.hasOwnProperty("plan")){
             $scope.planData = JSON.parse(localStorage.getItem("plan"));
         }
-       /* $scope.goNext = function(){
-            $location.url('/enrollmentSurvey2');
-        };*/
+
+        $scope.goNext = function(){
+            $location.url('/enrollmentDashboardPayment');
+        };
         
         $scope.selectPlan = function(){
             localStorage.setItem("planselected","true");

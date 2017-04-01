@@ -39,6 +39,10 @@
 
 .text-color {
 	color: #8A8A8A !important;
+}
 .medical-icon-color-unpaid{
     color: #F27B30;
+}
+.medical-icon-color-paid{
+    color: #2EB150;
 }
