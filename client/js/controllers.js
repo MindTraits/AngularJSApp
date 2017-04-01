@@ -239,17 +239,17 @@ angular.module('myApp.controllers', [])
         };
 
         $scope.personData = [
-            {slno:"$250"
+            {title:"Name",
+             value:""
             },
-            {slno:"$250"
+            {title:"Age",
+             value:""
             },
-            {slno:"$250"
+            {title:"Sex",
+             value:""
             },
-            {slno:"$250"
-            },
-            {slno:"$250"
-            },
-            {slno:"$250"
+            {title:"Mobile No.",
+             value:""
             }
         ];
 

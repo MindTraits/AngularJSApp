@@ -1,20 +1,28 @@
-<!-- <md-grid-tile>
-  
-</md-grid-tile> -->
-<md-grid-tile-header>
-<span class="md-primary" ng-click="goBack()"><<==</span>
-    <center><h3>Add Person</h3></center>
-  </md-grid-tile-header>
+<md-toolbar class="header-bg">
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button"  show-sm  ng-click="goBack()">
+          	<md-tooltip>Next</md-tooltip>
+          	<md-icon ng-bind="'chevron_left'" class="icon-color"></md-icon>
+        </md-button>
+        <h1 flex="90" class="header-text">Add Person</h1>
+    </div>
+</md-toolbar>
+<md-divider ></md-divider>
 
-<md-content layout-padding>
-    <md-list-item class="md-3-line" ng-repeat="data in personData">
-	   <div>
-	   		<strong><span style="color:black;">==========</span>{{data}}</strong>
-	   </div>
+<md-content layout-padding class="content-background">
+    <md-list-item class="header-bg md-3-line" ng-repeat="data in personData">
+	   <md-input-container>
+		  <label>{{data.title}}</label>
+		  <input  type="text" ng-model="data.value">
+		</md-input-container>
 	   <md-divider ></md-divider>
 	 </md-list-item>
-
-	 <div ng-click="addPerson()">
-	 	Add person
-	 </div>
 </md-content>
+
+<md-toolbar class="header-bg">
+    <div class="md-toolbar-tools">
+    	<span flex="30"></span>
+      	<md-button flex="40" class="md-raised md-primary-btn" ng-click="addPerson()" type="button">Add person</md-button>
+     	<span flex="30"></span>
+    </div>
+</md-toolbar>

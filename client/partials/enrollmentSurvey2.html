@@ -1,23 +1,52 @@
+<md-toolbar class="header-bg">
+    <div class="md-toolbar-tools">
+        <h1 flex="90" class="header-text">Before You Begin</h1>
+        <md-button class="md-icon-button"  show-sm  ng-click="goBack()">
+          	<md-tooltip>Next</md-tooltip>
+          	<md-icon ng-bind="'clear'" style="color: #000000;"></md-icon>
+        </md-button>
+    </div>
+</md-toolbar>
 
-  <md-grid-tile-header>
-  	
-    <center><h3>Before You Begin</h3></center>
-  </md-grid-tile-header>
+<md-content class="content-background">
+	<center>
+		<div layout-fill>
+			<h3 class="md-padding">
+				<center class="md-headline">Please answer...</center>
+				<div class="md-title">
+					Here is who we have on
 
-<md-content layout-padding>
-	<center><div><strong>Please answer...</strong>
-		Here is who we have on
-	file that will be covered.</div></center>
-	<div ng-click="goToAddPerson()"> <md-icon md-svg-icon=""></md-icon>ADD PERSON</div>
-    <md-list-item class="md-3-line" ng-repeat="data in personList">
-	   <md-icon md-svg-icon=""></md-icon>
-	   <img class="md-avatar" alt="" />
-	   <div class="md-list-item-text" layout="column">
-	        <h4>{{data.name}}</h4>
-	        <p>{{data.description}}</p>
-	   </div>
-	   <md-divider ></md-divider>
-	 </md-list-item>
+					file that will be covered.
+				</div>
+			</h3>
+		</div>
+	</center>
 
-	 <div><span class="md-primary" ng-click="goBack()"><<==</span> &nbsp;<span class="md-primary" ng-click="goNext()">==>></span></div>
+	<div ng-click="goToAddPerson()" class="header-bg icon-color"> 
+		<br/>
+		<center>
+			<span><md-icon ng-bind="'add_circle'" class="icon-color"></md-icon>&nbsp;&nbsp;ADD PERSON</span>
+		</center><br/>
+	</div>
+	<md-divider ></md-divider>
+    <md-list class="header-bg md-dense" flex>
+	    <md-list-item class="md-3-line md-long-text" ng-repeat="data in personList">
+		   	<!-- <md-icon ng-bind="data.glyphicons" style="color: #1e92af;"></md-icon> -->
+		   	<img ng-src="pics/amy_jones.jpg" class="md-avatar" >
+		    <div class="md-list-item-text" layout="column">
+	            <h3><b>{{data.name}}</b></h3>
+	            <p>{{data.description}}</p>
+	        </div>
+		   	<md-icon ng-bind="'chevron_right'"></md-icon>
+		   	<md-divider ></md-divider>
+		</md-list-item>
+	</md-list>
+	<md-divider ></md-divider>
 </md-content>
+<md-toolbar class="header-bg">
+    <div class="md-toolbar-tools">
+      <md-button flex="30" class="md-raised md-primary-btn" ng-click="goBack()" type="button">Previous</md-button>
+      <span flex="40"></span>
+      <md-button flex="30" class="md-raised md-primary-btn" ng-click="goNext()" type="button">NEXT</md-button>
+    </div>
+</md-toolbar>
