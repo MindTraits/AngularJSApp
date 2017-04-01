@@ -148,16 +148,19 @@ angular.module('myApp.controllers', [])
         $scope.goToBenefitSelection = function(){
              $location.url('/benefitSelection');
         };
-
+        
         $scope.medicalList = [
             {title:"Medical",
-             description:"Healthcare Choice with HSA Efective: Sep 1, 2017"
+             description:"Healthcare Choice with HSA Efective: Sep 1, 2017",
+             glyphicons:"favorite"
             },
             {title:"Health Savings Account",
-             description:"Optus Bank Efective: Sep 1, 2017"
+             description:"Optus Bank Efective: Sep 1, 2017",
+             glyphicons:"monetization_on"
             },
             {title:"Dental",
-             description:"Dental Plus Plan Efective: Sep 1, 2017"
+             description:"Dental Plus Plan Efective: Sep 1, 2017",
+             glyphicons:"sentiment_very_satisfied"
             }
         ];
 

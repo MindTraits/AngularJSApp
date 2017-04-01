@@ -17,6 +17,8 @@ config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/enrollmentSurvey2', {templateUrl: 'partials/enrollmentSurvey2.html', controller: 'EnrollmentSurvey2Ctrl'});
     $routeProvider.when('/addPerson', {templateUrl: 'partials/addPerson.html', controller: 'AddPersonCtrl'});
     $routeProvider.when('/enrollmentDashboard', {templateUrl: 'partials/enrollmentDashboard.html', controller: 'EnrollmentDashboardCtrl'});
+    $routeProvider.when('/enrollmentDashboardPayment', {templateUrl: 'partials/enrollmentDashboardPayment.html', controller: 'EnrollmentDashboardCtrl'});
+    $routeProvider.when('/enrollmentDashboardAfterPayment', {templateUrl: 'partials/enrollmentDashboardAfterPayment.html', controller: 'EnrollmentDashboardCtrl'});
     $routeProvider.when('/benefitSelection', {templateUrl: 'partials/benefitSelection.html', controller: 'BenefitSelectionCtrl'});
     $routeProvider.when('/planselection', {templateUrl: 'partials/planSelection.html', controller: 'PlanSelectionCtrl'});
     $routeProvider.otherwise({redirectTo: '/dashboard'});
